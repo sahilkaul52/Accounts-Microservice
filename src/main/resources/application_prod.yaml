@@ -1,0 +1,17 @@
+build:
+  version: "1.0"
+
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+
+accounts:
+  message: "Welcome to EazyBank accounts related local APIs "
+  contactDetails:
+    name: "Ganesh -Manager"
+    email: "ganesh77@yahoo.com"
+  onCallSupport:
+    - (111) 555-1234787
+    - (112) 523-1345898
