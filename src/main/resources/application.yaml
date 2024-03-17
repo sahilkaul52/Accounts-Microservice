@@ -3,7 +3,11 @@ server:
 
 spring:
   application:
-    name: accounts-service
+    name: accounts
+
+  profiles:
+    active: prod
+
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
@@ -19,16 +23,8 @@ spring:
     show-sql: true
 
   config:
-    import:
-      - "application_qa.yaml"
-      - "application_prod.yaml"
+    import: "optional:configserver:http://localhost:8071"
 
-  profiles:
-    active:
-      - "qa"
-
-build:
-  version: "3.0"
 
 accounts:
   message: "Welcome to EazyBank accounts related local APIs "
@@ -38,3 +34,10 @@ accounts:
   onCallSupport:
     - (555) 555-1234
     - (555) 523-1345
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
