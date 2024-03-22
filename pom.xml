@@ -108,7 +108,7 @@
                 <version>3.4.1</version>
                 <configuration>
                     <to>
-                        <image>sahilkaul52/accounts:v1</image>
+                        <image>sahilkaul52/accounts:v6</image>
                     </to>
                 </configuration>
             </plugin>
