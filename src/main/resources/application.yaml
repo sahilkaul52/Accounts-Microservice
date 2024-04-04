@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: accounts
+    name: "accounts"
 
   profiles:
     active: prod
@@ -28,7 +28,7 @@ spring:
     password: "guest"
 
   config:
-    import: "optional:configserver:http://localhost:8071"
+    import: "optional:configserver:http://localhost:8071/"
 
 
 management:
