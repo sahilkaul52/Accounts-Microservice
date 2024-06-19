@@ -1,4 +1,4 @@
-package com.example.accounts.service.impl;
+package com.example.accounts.service;
 
 import com.example.accounts.dto.CustomerDto;
 
